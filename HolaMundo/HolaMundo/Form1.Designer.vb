@@ -28,13 +28,13 @@ Partial Class Form1
         Me.lblnum2 = New System.Windows.Forms.Label()
         Me.lblrespuesta = New System.Windows.Forms.Label()
         Me.txtnum2 = New System.Windows.Forms.TextBox()
-        Me.lblsuma = New System.Windows.Forms.Label()
-        Me.lblresta = New System.Windows.Forms.Label()
-        Me.lblmult = New System.Windows.Forms.Label()
-        Me.lbldivicion = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.optsuma = New System.Windows.Forms.RadioButton()
+        Me.optresta = New System.Windows.Forms.RadioButton()
+        Me.optmultiplicacion = New System.Windows.Forms.RadioButton()
+        Me.optdivicion = New System.Windows.Forms.RadioButton()
+        Me.optporcentaje = New System.Windows.Forms.RadioButton()
+        Me.optesponente = New System.Windows.Forms.RadioButton()
+        Me.optmodulo = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'lblnum1
@@ -55,7 +55,7 @@ Partial Class Form1
         '
         'btncalcular
         '
-        Me.btncalcular.Location = New System.Drawing.Point(72, 147)
+        Me.btncalcular.Location = New System.Drawing.Point(71, 173)
         Me.btncalcular.Name = "btncalcular"
         Me.btncalcular.Size = New System.Drawing.Size(75, 23)
         Me.btncalcular.TabIndex = 2
@@ -65,7 +65,7 @@ Partial Class Form1
         'lblnum2
         '
         Me.lblnum2.AutoSize = True
-        Me.lblnum2.Location = New System.Drawing.Point(284, 36)
+        Me.lblnum2.Location = New System.Drawing.Point(335, 37)
         Me.lblnum2.Name = "lblnum2"
         Me.lblnum2.Size = New System.Drawing.Size(44, 13)
         Me.lblnum2.TabIndex = 3
@@ -74,7 +74,7 @@ Partial Class Form1
         'lblrespuesta
         '
         Me.lblrespuesta.AutoSize = True
-        Me.lblrespuesta.Location = New System.Drawing.Point(457, 36)
+        Me.lblrespuesta.Location = New System.Drawing.Point(510, 39)
         Me.lblrespuesta.Name = "lblrespuesta"
         Me.lblrespuesta.Size = New System.Drawing.Size(70, 13)
         Me.lblrespuesta.TabIndex = 4
@@ -82,86 +82,100 @@ Partial Class Form1
         '
         'txtnum2
         '
-        Me.txtnum2.Location = New System.Drawing.Point(351, 33)
+        Me.txtnum2.Location = New System.Drawing.Point(404, 37)
         Me.txtnum2.Name = "txtnum2"
         Me.txtnum2.Size = New System.Drawing.Size(100, 20)
         Me.txtnum2.TabIndex = 5
         '
-        'lblsuma
+        'optsuma
         '
-        Me.lblsuma.AutoSize = True
-        Me.lblsuma.Location = New System.Drawing.Point(239, 36)
-        Me.lblsuma.Name = "lblsuma"
-        Me.lblsuma.Size = New System.Drawing.Size(13, 13)
-        Me.lblsuma.TabIndex = 6
-        Me.lblsuma.Text = "+"
+        Me.optsuma.AutoSize = True
+        Me.optsuma.Location = New System.Drawing.Point(228, 35)
+        Me.optsuma.Name = "optsuma"
+        Me.optsuma.Size = New System.Drawing.Size(31, 17)
+        Me.optsuma.TabIndex = 6
+        Me.optsuma.TabStop = True
+        Me.optsuma.Text = "+"
+        Me.optsuma.UseVisualStyleBackColor = True
         '
-        'lblresta
+        'optresta
         '
-        Me.lblresta.AutoSize = True
-        Me.lblresta.Location = New System.Drawing.Point(239, 69)
-        Me.lblresta.Name = "lblresta"
-        Me.lblresta.Size = New System.Drawing.Size(10, 13)
-        Me.lblresta.TabIndex = 7
-        Me.lblresta.Text = "-"
+        Me.optresta.AutoSize = True
+        Me.optresta.Location = New System.Drawing.Point(228, 58)
+        Me.optresta.Name = "optresta"
+        Me.optresta.Size = New System.Drawing.Size(28, 17)
+        Me.optresta.TabIndex = 7
+        Me.optresta.TabStop = True
+        Me.optresta.Text = "-"
+        Me.optresta.UseVisualStyleBackColor = True
         '
-        'lblmult
+        'optmultiplicacion
         '
-        Me.lblmult.AutoSize = True
-        Me.lblmult.Location = New System.Drawing.Point(239, 99)
-        Me.lblmult.Name = "lblmult"
-        Me.lblmult.Size = New System.Drawing.Size(11, 13)
-        Me.lblmult.TabIndex = 8
-        Me.lblmult.Text = "*"
+        Me.optmultiplicacion.AutoSize = True
+        Me.optmultiplicacion.Location = New System.Drawing.Point(228, 81)
+        Me.optmultiplicacion.Name = "optmultiplicacion"
+        Me.optmultiplicacion.Size = New System.Drawing.Size(29, 17)
+        Me.optmultiplicacion.TabIndex = 8
+        Me.optmultiplicacion.TabStop = True
+        Me.optmultiplicacion.Text = "*"
+        Me.optmultiplicacion.UseVisualStyleBackColor = True
         '
-        'lbldivicion
+        'optdivicion
         '
-        Me.lbldivicion.AutoSize = True
-        Me.lbldivicion.Location = New System.Drawing.Point(239, 131)
-        Me.lbldivicion.Name = "lbldivicion"
-        Me.lbldivicion.Size = New System.Drawing.Size(12, 13)
-        Me.lbldivicion.TabIndex = 9
-        Me.lbldivicion.Text = "/"
+        Me.optdivicion.AutoSize = True
+        Me.optdivicion.Location = New System.Drawing.Point(228, 104)
+        Me.optdivicion.Name = "optdivicion"
+        Me.optdivicion.Size = New System.Drawing.Size(30, 17)
+        Me.optdivicion.TabIndex = 9
+        Me.optdivicion.TabStop = True
+        Me.optdivicion.Text = "/"
+        Me.optdivicion.UseVisualStyleBackColor = True
         '
-        'Label8
+        'optporcentaje
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(239, 166)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(39, 13)
-        Me.Label8.TabIndex = 10
-        Me.Label8.Text = "Label8"
+        Me.optporcentaje.AutoSize = True
+        Me.optporcentaje.Location = New System.Drawing.Point(228, 127)
+        Me.optporcentaje.Name = "optporcentaje"
+        Me.optporcentaje.Size = New System.Drawing.Size(79, 17)
+        Me.optporcentaje.TabIndex = 10
+        Me.optporcentaje.TabStop = True
+        Me.optporcentaje.Text = "Porcentaje "
+        Me.optporcentaje.UseVisualStyleBackColor = True
         '
-        'Label9
+        'optesponente
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(239, 196)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(39, 13)
-        Me.Label9.TabIndex = 11
-        Me.Label9.Text = "Label9"
+        Me.optesponente.AutoSize = True
+        Me.optesponente.Location = New System.Drawing.Point(228, 153)
+        Me.optesponente.Name = "optesponente"
+        Me.optesponente.Size = New System.Drawing.Size(31, 17)
+        Me.optesponente.TabIndex = 11
+        Me.optesponente.TabStop = True
+        Me.optesponente.Text = "^"
+        Me.optesponente.UseVisualStyleBackColor = True
         '
-        'Label10
+        'optmodulo
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(233, 226)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(45, 13)
-        Me.Label10.TabIndex = 12
-        Me.Label10.Text = "Label10"
+        Me.optmodulo.AutoSize = True
+        Me.optmodulo.Location = New System.Drawing.Point(228, 176)
+        Me.optmodulo.Name = "optmodulo"
+        Me.optmodulo.Size = New System.Drawing.Size(33, 17)
+        Me.optmodulo.TabIndex = 12
+        Me.optmodulo.TabStop = True
+        Me.optmodulo.Text = "%"
+        Me.optmodulo.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.lbldivicion)
-        Me.Controls.Add(Me.lblmult)
-        Me.Controls.Add(Me.lblresta)
-        Me.Controls.Add(Me.lblsuma)
+        Me.Controls.Add(Me.optmodulo)
+        Me.Controls.Add(Me.optesponente)
+        Me.Controls.Add(Me.optporcentaje)
+        Me.Controls.Add(Me.optdivicion)
+        Me.Controls.Add(Me.optmultiplicacion)
+        Me.Controls.Add(Me.optresta)
+        Me.Controls.Add(Me.optsuma)
         Me.Controls.Add(Me.txtnum2)
         Me.Controls.Add(Me.lblrespuesta)
         Me.Controls.Add(Me.lblnum2)
@@ -181,11 +195,11 @@ Partial Class Form1
     Friend WithEvents lblnum2 As Label
     Friend WithEvents lblrespuesta As Label
     Friend WithEvents txtnum2 As TextBox
-    Friend WithEvents lblsuma As Label
-    Friend WithEvents lblresta As Label
-    Friend WithEvents lblmult As Label
-    Friend WithEvents lbldivicion As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label10 As Label
+    Friend WithEvents optsuma As RadioButton
+    Friend WithEvents optresta As RadioButton
+    Friend WithEvents optmultiplicacion As RadioButton
+    Friend WithEvents optdivicion As RadioButton
+    Friend WithEvents optporcentaje As RadioButton
+    Friend WithEvents optesponente As RadioButton
+    Friend WithEvents optmodulo As RadioButton
 End Class
