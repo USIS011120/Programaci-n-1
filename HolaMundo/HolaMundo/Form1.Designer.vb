@@ -55,7 +55,7 @@ Partial Class Form1
         '
         'btncalcular
         '
-        Me.btncalcular.Location = New System.Drawing.Point(71, 173)
+        Me.btncalcular.Location = New System.Drawing.Point(129, 176)
         Me.btncalcular.Name = "btncalcular"
         Me.btncalcular.Size = New System.Drawing.Size(75, 23)
         Me.btncalcular.TabIndex = 2
@@ -65,7 +65,7 @@ Partial Class Form1
         'lblnum2
         '
         Me.lblnum2.AutoSize = True
-        Me.lblnum2.Location = New System.Drawing.Point(335, 37)
+        Me.lblnum2.Location = New System.Drawing.Point(276, 39)
         Me.lblnum2.Name = "lblnum2"
         Me.lblnum2.Size = New System.Drawing.Size(44, 13)
         Me.lblnum2.TabIndex = 3
@@ -74,7 +74,7 @@ Partial Class Form1
         'lblrespuesta
         '
         Me.lblrespuesta.AutoSize = True
-        Me.lblrespuesta.Location = New System.Drawing.Point(510, 39)
+        Me.lblrespuesta.Location = New System.Drawing.Point(423, 39)
         Me.lblrespuesta.Name = "lblrespuesta"
         Me.lblrespuesta.Size = New System.Drawing.Size(70, 13)
         Me.lblrespuesta.TabIndex = 4
@@ -82,7 +82,7 @@ Partial Class Form1
         '
         'txtnum2
         '
-        Me.txtnum2.Location = New System.Drawing.Point(404, 37)
+        Me.txtnum2.Location = New System.Drawing.Point(317, 36)
         Me.txtnum2.Name = "txtnum2"
         Me.txtnum2.Size = New System.Drawing.Size(100, 20)
         Me.txtnum2.TabIndex = 5
