@@ -25,6 +25,22 @@
             lblrespuesta.Text = num1 Mod num2
         End If
 
+        Select Case cboOperaciones.SelectedIndex
+            Case 1
+                lblrespuesta.Text = num1 + num2
+            Case 2
+                lblrespuesta.Text = num1 - num2
+            Case 3
+                lblrespuesta.Text = num1 * num2
+            Case 4
+                lblrespuesta.Text = num1 / num2
+            Case 5
+                lblrespuesta.Text = num1 * num2 / 100
+            Case 6
+                lblrespuesta.Text = num1 ^ num2
+            Case 7
+                lblrespuesta.Text = num1 Mod num2
+        End Select
+
     End Sub
 End Class
-
