@@ -54,7 +54,7 @@ Partial Class Form1
         '
         'btnProcesar
         '
-        Me.btnProcesar.Location = New System.Drawing.Point(111, 148)
+        Me.btnProcesar.Location = New System.Drawing.Point(111, 140)
         Me.btnProcesar.Name = "btnProcesar"
         Me.btnProcesar.Size = New System.Drawing.Size(129, 59)
         Me.btnProcesar.TabIndex = 3
