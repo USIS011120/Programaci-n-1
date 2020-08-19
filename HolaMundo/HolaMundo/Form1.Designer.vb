@@ -22,197 +22,104 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lblnum1 = New System.Windows.Forms.Label()
-        Me.txtnum1 = New System.Windows.Forms.TextBox()
-        Me.btncalcular = New System.Windows.Forms.Button()
-        Me.lblnum2 = New System.Windows.Forms.Label()
-        Me.lblrespuesta = New System.Windows.Forms.Label()
-        Me.txtnum2 = New System.Windows.Forms.TextBox()
-        Me.optsuma = New System.Windows.Forms.RadioButton()
-        Me.optresta = New System.Windows.Forms.RadioButton()
-        Me.optmultiplicacion = New System.Windows.Forms.RadioButton()
-        Me.optdivicion = New System.Windows.Forms.RadioButton()
-        Me.optporcentaje = New System.Windows.Forms.RadioButton()
-        Me.optesponente = New System.Windows.Forms.RadioButton()
-        Me.optmodulo = New System.Windows.Forms.RadioButton()
-        Me.cboOperaciones = New System.Windows.Forms.ComboBox()
+        Me.lblnum = New System.Windows.Forms.Label()
+        Me.txtnum = New System.Windows.Forms.TextBox()
+        Me.btnParImpar = New System.Windows.Forms.Button()
+        Me.btnPrimo = New System.Windows.Forms.Button()
+        Me.btnCajero = New System.Windows.Forms.Button()
+        Me.btnProcesar = New System.Windows.Forms.Button()
+        Me.lstEjercicios = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
-        'lblnum1
+        'lblnum
         '
-        Me.lblnum1.AutoSize = True
-        Me.lblnum1.Location = New System.Drawing.Point(59, 32)
-        Me.lblnum1.Name = "lblnum1"
-        Me.lblnum1.Size = New System.Drawing.Size(41, 13)
-        Me.lblnum1.TabIndex = 0
-        Me.lblnum1.Text = "Num 1:"
+        Me.lblnum.AutoSize = True
+        Me.lblnum.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblnum.Location = New System.Drawing.Point(12, 74)
+        Me.lblnum.Name = "lblnum"
+        Me.lblnum.Size = New System.Drawing.Size(60, 20)
+        Me.lblnum.TabIndex = 0
+        Me.lblnum.Text = "Número:"
         '
-        'txtnum1
+        'txtnum
         '
-        Me.txtnum1.Location = New System.Drawing.Point(104, 29)
-        Me.txtnum1.Name = "txtnum1"
-        Me.txtnum1.Size = New System.Drawing.Size(100, 20)
-        Me.txtnum1.TabIndex = 1
+        Me.txtnum.Location = New System.Drawing.Point(78, 74)
+        Me.txtnum.Name = "txtnum"
+        Me.txtnum.Size = New System.Drawing.Size(134, 20)
+        Me.txtnum.TabIndex = 1
         '
-        'btncalcular
+        'btnParImpar
         '
-        Me.btncalcular.Location = New System.Drawing.Point(129, 176)
-        Me.btncalcular.Name = "btncalcular"
-        Me.btncalcular.Size = New System.Drawing.Size(75, 23)
-        Me.btncalcular.TabIndex = 2
-        Me.btncalcular.Text = "Calcular"
-        Me.btncalcular.UseVisualStyleBackColor = True
+        Me.btnParImpar.Font = New System.Drawing.Font("Arial Black", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnParImpar.Location = New System.Drawing.Point(12, 132)
+        Me.btnParImpar.Name = "btnParImpar"
+        Me.btnParImpar.Size = New System.Drawing.Size(102, 56)
+        Me.btnParImpar.TabIndex = 2
+        Me.btnParImpar.Text = "Par o Impar?"
+        Me.btnParImpar.UseVisualStyleBackColor = True
         '
-        'lblnum2
+        'btnPrimo
         '
-        Me.lblnum2.AutoSize = True
-        Me.lblnum2.Location = New System.Drawing.Point(276, 39)
-        Me.lblnum2.Name = "lblnum2"
-        Me.lblnum2.Size = New System.Drawing.Size(44, 13)
-        Me.lblnum2.TabIndex = 3
-        Me.lblnum2.Text = "Num 2 :"
+        Me.btnPrimo.Font = New System.Drawing.Font("Arial Black", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrimo.Location = New System.Drawing.Point(120, 132)
+        Me.btnPrimo.Name = "btnPrimo"
+        Me.btnPrimo.Size = New System.Drawing.Size(92, 56)
+        Me.btnPrimo.TabIndex = 3
+        Me.btnPrimo.Text = "Primo?"
+        Me.btnPrimo.UseVisualStyleBackColor = True
         '
-        'lblrespuesta
+        'btnCajero
         '
-        Me.lblrespuesta.AutoSize = True
-        Me.lblrespuesta.Location = New System.Drawing.Point(423, 39)
-        Me.lblrespuesta.Name = "lblrespuesta"
-        Me.lblrespuesta.Size = New System.Drawing.Size(70, 13)
-        Me.lblrespuesta.TabIndex = 4
-        Me.lblrespuesta.Text = "Respuesta: ?"
+        Me.btnCajero.Font = New System.Drawing.Font("Arial Black", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCajero.Location = New System.Drawing.Point(218, 133)
+        Me.btnCajero.Name = "btnCajero"
+        Me.btnCajero.Size = New System.Drawing.Size(106, 56)
+        Me.btnCajero.TabIndex = 4
+        Me.btnCajero.Text = "Cajero"
+        Me.btnCajero.UseVisualStyleBackColor = True
         '
-        'txtnum2
+        'btnProcesar
         '
-        Me.txtnum2.Location = New System.Drawing.Point(317, 36)
-        Me.txtnum2.Name = "txtnum2"
-        Me.txtnum2.Size = New System.Drawing.Size(100, 20)
-        Me.txtnum2.TabIndex = 5
+        Me.btnProcesar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnProcesar.Location = New System.Drawing.Point(333, 243)
+        Me.btnProcesar.Name = "btnProcesar"
+        Me.btnProcesar.Size = New System.Drawing.Size(196, 34)
+        Me.btnProcesar.TabIndex = 5
+        Me.btnProcesar.Text = "Mostrar pares e impares"
+        Me.btnProcesar.UseVisualStyleBackColor = True
         '
-        'optsuma
+        'lstEjercicios
         '
-        Me.optsuma.AutoSize = True
-        Me.optsuma.Location = New System.Drawing.Point(228, 35)
-        Me.optsuma.Name = "optsuma"
-        Me.optsuma.Size = New System.Drawing.Size(31, 17)
-        Me.optsuma.TabIndex = 6
-        Me.optsuma.TabStop = True
-        Me.optsuma.Text = "+"
-        Me.optsuma.UseVisualStyleBackColor = True
-        '
-        'optresta
-        '
-        Me.optresta.AutoSize = True
-        Me.optresta.Location = New System.Drawing.Point(228, 58)
-        Me.optresta.Name = "optresta"
-        Me.optresta.Size = New System.Drawing.Size(28, 17)
-        Me.optresta.TabIndex = 7
-        Me.optresta.TabStop = True
-        Me.optresta.Text = "-"
-        Me.optresta.UseVisualStyleBackColor = True
-        '
-        'optmultiplicacion
-        '
-        Me.optmultiplicacion.AutoSize = True
-        Me.optmultiplicacion.Location = New System.Drawing.Point(228, 81)
-        Me.optmultiplicacion.Name = "optmultiplicacion"
-        Me.optmultiplicacion.Size = New System.Drawing.Size(29, 17)
-        Me.optmultiplicacion.TabIndex = 8
-        Me.optmultiplicacion.TabStop = True
-        Me.optmultiplicacion.Text = "*"
-        Me.optmultiplicacion.UseVisualStyleBackColor = True
-        '
-        'optdivicion
-        '
-        Me.optdivicion.AutoSize = True
-        Me.optdivicion.Location = New System.Drawing.Point(228, 104)
-        Me.optdivicion.Name = "optdivicion"
-        Me.optdivicion.Size = New System.Drawing.Size(30, 17)
-        Me.optdivicion.TabIndex = 9
-        Me.optdivicion.TabStop = True
-        Me.optdivicion.Text = "/"
-        Me.optdivicion.UseVisualStyleBackColor = True
-        '
-        'optporcentaje
-        '
-        Me.optporcentaje.AutoSize = True
-        Me.optporcentaje.Location = New System.Drawing.Point(228, 127)
-        Me.optporcentaje.Name = "optporcentaje"
-        Me.optporcentaje.Size = New System.Drawing.Size(79, 17)
-        Me.optporcentaje.TabIndex = 10
-        Me.optporcentaje.TabStop = True
-        Me.optporcentaje.Text = "Porcentaje "
-        Me.optporcentaje.UseVisualStyleBackColor = True
-        '
-        'optesponente
-        '
-        Me.optesponente.AutoSize = True
-        Me.optesponente.Location = New System.Drawing.Point(228, 153)
-        Me.optesponente.Name = "optesponente"
-        Me.optesponente.Size = New System.Drawing.Size(31, 17)
-        Me.optesponente.TabIndex = 11
-        Me.optesponente.TabStop = True
-        Me.optesponente.Text = "^"
-        Me.optesponente.UseVisualStyleBackColor = True
-        '
-        'optmodulo
-        '
-        Me.optmodulo.AutoSize = True
-        Me.optmodulo.Location = New System.Drawing.Point(228, 176)
-        Me.optmodulo.Name = "optmodulo"
-        Me.optmodulo.Size = New System.Drawing.Size(33, 17)
-        Me.optmodulo.TabIndex = 12
-        Me.optmodulo.TabStop = True
-        Me.optmodulo.Text = "%"
-        Me.optmodulo.UseVisualStyleBackColor = True
-        '
-        'cboOperaciones
-        '
-        Me.cboOperaciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboOperaciones.FormattingEnabled = True
-        Me.cboOperaciones.Items.AddRange(New Object() {"Seleccione una opción", "Suma ", "Resta", "Multiplicación ", "Divición ", "Porcentaje", "Exponenciación ", "Modulo "})
-        Me.cboOperaciones.Location = New System.Drawing.Point(385, 100)
-        Me.cboOperaciones.Name = "cboOperaciones"
-        Me.cboOperaciones.Size = New System.Drawing.Size(121, 21)
-        Me.cboOperaciones.TabIndex = 13
+        Me.lstEjercicios.FormattingEnabled = True
+        Me.lstEjercicios.Location = New System.Drawing.Point(333, 12)
+        Me.lstEjercicios.Name = "lstEjercicios"
+        Me.lstEjercicios.Size = New System.Drawing.Size(196, 225)
+        Me.lstEjercicios.TabIndex = 6
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.cboOperaciones)
-        Me.Controls.Add(Me.optmodulo)
-        Me.Controls.Add(Me.optesponente)
-        Me.Controls.Add(Me.optporcentaje)
-        Me.Controls.Add(Me.optdivicion)
-        Me.Controls.Add(Me.optmultiplicacion)
-        Me.Controls.Add(Me.optresta)
-        Me.Controls.Add(Me.optsuma)
-        Me.Controls.Add(Me.txtnum2)
-        Me.Controls.Add(Me.lblrespuesta)
-        Me.Controls.Add(Me.lblnum2)
-        Me.Controls.Add(Me.btncalcular)
-        Me.Controls.Add(Me.txtnum1)
-        Me.Controls.Add(Me.lblnum1)
+        Me.ClientSize = New System.Drawing.Size(544, 392)
+        Me.Controls.Add(Me.lstEjercicios)
+        Me.Controls.Add(Me.btnProcesar)
+        Me.Controls.Add(Me.btnCajero)
+        Me.Controls.Add(Me.btnPrimo)
+        Me.Controls.Add(Me.btnParImpar)
+        Me.Controls.Add(Me.txtnum)
+        Me.Controls.Add(Me.lblnum)
         Me.Name = "Form1"
-        Me.Text = "Calculadora  Basica "
+        Me.Text = "Ejercicios"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents lblnum1 As Label
-    Friend WithEvents txtnum1 As TextBox
-    Friend WithEvents btncalcular As Button
-    Friend WithEvents lblnum2 As Label
-    Friend WithEvents lblrespuesta As Label
-    Friend WithEvents txtnum2 As TextBox
-    Friend WithEvents optsuma As RadioButton
-    Friend WithEvents optresta As RadioButton
-    Friend WithEvents optmultiplicacion As RadioButton
-    Friend WithEvents optdivicion As RadioButton
-    Friend WithEvents optporcentaje As RadioButton
-    Friend WithEvents optesponente As RadioButton
-    Friend WithEvents optmodulo As RadioButton
-    Friend WithEvents cboOperaciones As ComboBox
+    Friend WithEvents lblnum As Label
+    Friend WithEvents txtnum As TextBox
+    Friend WithEvents btnParImpar As Button
+    Friend WithEvents btnPrimo As Button
+    Friend WithEvents btnCajero As Button
+    Friend WithEvents btnProcesar As Button
+    Friend WithEvents lstEjercicios As ListBox
 End Class
