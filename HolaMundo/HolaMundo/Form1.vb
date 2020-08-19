@@ -1,5 +1,6 @@
 ﻿Public Class Form1
-    Private Sub btncalcular_Click_1(sender As Object, e As EventArgs) Handles btncalcular.Click
+    Private Sub btncalcular_Click(sender As Object, e As EventArgs) Handles btncalcular.Click
+            Private Sub btncalcular_Click(sender As Object, e As EventArgs) Handles btncalcular.Click
         Dim num1, num2, respuesta As Double
         num1 = txtnum1.Text
         num2 = txtnum2.Text
@@ -41,5 +42,7 @@
             Case 7
                 lblrespuesta.Text = num1 Mod num2
         End Select
+
+    End Sub
     End Sub
 End Class
