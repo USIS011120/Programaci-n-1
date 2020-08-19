@@ -31,7 +31,7 @@ Partial Class Form1
         'lblntabla
         '
         Me.lblntabla.AutoSize = True
-        Me.lblntabla.Location = New System.Drawing.Point(97, 105)
+        Me.lblntabla.Location = New System.Drawing.Point(19, 26)
         Me.lblntabla.Name = "lblntabla"
         Me.lblntabla.Size = New System.Drawing.Size(37, 13)
         Me.lblntabla.TabIndex = 0
@@ -39,7 +39,7 @@ Partial Class Form1
         '
         'txtntabla
         '
-        Me.txtntabla.Location = New System.Drawing.Point(140, 102)
+        Me.txtntabla.Location = New System.Drawing.Point(62, 23)
         Me.txtntabla.Name = "txtntabla"
         Me.txtntabla.Size = New System.Drawing.Size(100, 20)
         Me.txtntabla.TabIndex = 1
@@ -47,14 +47,14 @@ Partial Class Form1
         'lstTablas
         '
         Me.lstTablas.FormattingEnabled = True
-        Me.lstTablas.Location = New System.Drawing.Point(257, 91)
+        Me.lstTablas.Location = New System.Drawing.Point(179, 12)
         Me.lstTablas.Name = "lstTablas"
         Me.lstTablas.Size = New System.Drawing.Size(141, 134)
         Me.lstTablas.TabIndex = 2
         '
         'btnProcesar
         '
-        Me.btnProcesar.Location = New System.Drawing.Point(111, 140)
+        Me.btnProcesar.Location = New System.Drawing.Point(33, 61)
         Me.btnProcesar.Name = "btnProcesar"
         Me.btnProcesar.Size = New System.Drawing.Size(129, 59)
         Me.btnProcesar.TabIndex = 3
@@ -65,7 +65,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(390, 175)
         Me.Controls.Add(Me.btnProcesar)
         Me.Controls.Add(Me.lstTablas)
         Me.Controls.Add(Me.txtntabla)
