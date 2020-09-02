@@ -35,7 +35,7 @@ Partial Class Form1
         '
         'btnCalcular
         '
-        Me.btnCalcular.Location = New System.Drawing.Point(108, 103)
+        Me.btnCalcular.Location = New System.Drawing.Point(108, 101)
         Me.btnCalcular.Name = "btnCalcular"
         Me.btnCalcular.Size = New System.Drawing.Size(140, 36)
         Me.btnCalcular.TabIndex = 0
