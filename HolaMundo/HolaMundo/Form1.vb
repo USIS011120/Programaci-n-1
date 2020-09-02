@@ -1,48 +1,59 @@
 ﻿Public Class Form1
-    Private Sub btncalcular_Click(sender As Object, e As EventArgs) Handles btncalcular.Click
-            Private Sub btncalcular_Click(sender As Object, e As EventArgs) Handles btncalcular.Click
-        Dim num1, num2, respuesta As Double
-        num1 = txtnum1.Text
-        num2 = txtnum2.Text
-        If optsuma.Checked Then
-            lblrespuesta.Text = num1 + num2
-        End If
-        If optresta.Checked Then
-            lblrespuesta.Text = num1 - num2
-        End If
-        If optmultiplicacion.Checked Then
-            lblrespuesta.Text = num1 * num2
-        End If
-        If optdivicion.Checked Then
-            lblrespuesta.Text = num1 / num2
-        End If
-        If optporcentaje.Checked Then
-            lblrespuesta.Text = num1 * num2 / 100
-        End If
-        If optesponente.Checked Then
-            lblrespuesta.Text = num1 ^ num2
-        End If
-        If optmodulo.Checked Then
-            lblrespuesta.Text = num1 Mod num2
-        End If
-
-        Select Case cboOperaciones.SelectedIndex
-            Case 1
-                lblrespuesta.Text = num1 + num2
-            Case 2
-                lblrespuesta.Text = num1 - num2
-            Case 3
-                lblrespuesta.Text = num1 * num2
-            Case 4
-                lblrespuesta.Text = num1 / num2
-            Case 5
-                lblrespuesta.Text = num1 * num2 / 100
-            Case 6
-                lblrespuesta.Text = num1 ^ num2
-            Case 7
-                lblrespuesta.Text = num1 Mod num2
-        End Select
-
+    Dim objInteres As New interes()
+    Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
+        objInteres.inter = txtinteres.Text
+        objInteres.tiempo = txttiempo.Text
+        objInteres.monto = txtcapital.Text
+        lblInteresSimple.Text = "Interes Simple: $" & objInteres.interesSimple()
+        lblInteresCompuesto.Text = "Interes Compuesto: $" & objInteres.interesCompuesto()
     End Sub
-    End Sub
+End Class
+
+Class inters
+    Dim _interes As Double, _ntiempo As Int16, _capital As Double
+    Public Property inter
+        Set(value)
+            If value >= 0 And value <= 100 Then
+                _interes = value
+            Else
+                MessageBox.Show("El valor del interes no es valido", "Ineres", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        End Set
+        Get
+            Return _interes
+        End Get
+    End Property
+    Public Property tiempo
+        Set(value)
+            If value >= 1 And value <= 120 Then
+                _ntiempo = value
+            Else
+                MessageBox.Show("tiempo no es valido", "Interes", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        End Set
+        Get
+            Return _ntiempo
+        End Get
+    End Property
+    Public Property monto
+        Set(value)
+            If value > 0 Then
+                _capital = value
+            Else
+                MessageBox.Show("El capital debe ser mayor a 0", "Interes", MessageBoxIcon.Error)
+            End If
+        End Set
+        Get
+            Return _capital
+        End Get
+    End Property
+
+    Public Function interesSimple()
+        Dim ins = _capital * (_interes / 100) * (_ntiempo / 12)
+        Return Math.Round(ins, 2)
+    End Function
+    Public Function interesCompuesto()
+        Dim inC = _capital * (1 + _interes / 100) ^ _ntiempo
+        Return Math.Round(inC, 2)
+    End Function
 End Class
