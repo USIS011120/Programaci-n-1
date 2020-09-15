@@ -23,104 +23,53 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.btnCalcular = New System.Windows.Forms.Button()
-        Me.lblCapital = New System.Windows.Forms.Label()
-        Me.txtcapital = New System.Windows.Forms.TextBox()
-        Me.txtinteres = New System.Windows.Forms.TextBox()
-        Me.lblinteres = New System.Windows.Forms.Label()
-        Me.txttiempo = New System.Windows.Forms.TextBox()
-        Me.lbltiempo = New System.Windows.Forms.Label()
-        Me.lblInteresSimple = New System.Windows.Forms.Label()
-        Me.lblInteresCompuesto = New System.Windows.Forms.Label()
+        Me.lblnumero = New System.Windows.Forms.Label()
+        Me.txtnumero = New System.Windows.Forms.TextBox()
+        Me.lblRespuestaRomano = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnCalcular
         '
-        Me.btnCalcular.Location = New System.Drawing.Point(108, 101)
+        Me.btnCalcular.Location = New System.Drawing.Point(64, 80)
         Me.btnCalcular.Name = "btnCalcular"
-        Me.btnCalcular.Size = New System.Drawing.Size(140, 36)
+        Me.btnCalcular.Size = New System.Drawing.Size(150, 46)
         Me.btnCalcular.TabIndex = 0
         Me.btnCalcular.Text = "Calcular"
         Me.btnCalcular.UseVisualStyleBackColor = True
         '
-        'lblCapital
+        'lblnumero
         '
-        Me.lblCapital.AutoSize = True
-        Me.lblCapital.Location = New System.Drawing.Point(0, 31)
-        Me.lblCapital.Name = "lblCapital"
-        Me.lblCapital.Size = New System.Drawing.Size(39, 13)
-        Me.lblCapital.TabIndex = 1
-        Me.lblCapital.Text = "Capital"
+        Me.lblnumero.AutoSize = True
+        Me.lblnumero.Location = New System.Drawing.Point(41, 29)
+        Me.lblnumero.Name = "lblnumero"
+        Me.lblnumero.Size = New System.Drawing.Size(39, 13)
+        Me.lblnumero.TabIndex = 1
+        Me.lblnumero.Text = "Capital"
         '
-        'txtcapital
+        'txtnumero
         '
-        Me.txtcapital.Location = New System.Drawing.Point(45, 28)
-        Me.txtcapital.Name = "txtcapital"
-        Me.txtcapital.Size = New System.Drawing.Size(100, 20)
-        Me.txtcapital.TabIndex = 2
+        Me.txtnumero.Location = New System.Drawing.Point(86, 26)
+        Me.txtnumero.Name = "txtnumero"
+        Me.txtnumero.Size = New System.Drawing.Size(100, 20)
+        Me.txtnumero.TabIndex = 2
         '
-        'txtinteres
+        'lblRespuestaRomano
         '
-        Me.txtinteres.Location = New System.Drawing.Point(194, 29)
-        Me.txtinteres.Name = "txtinteres"
-        Me.txtinteres.Size = New System.Drawing.Size(100, 20)
-        Me.txtinteres.TabIndex = 4
-        '
-        'lblinteres
-        '
-        Me.lblinteres.AutoSize = True
-        Me.lblinteres.Location = New System.Drawing.Point(149, 32)
-        Me.lblinteres.Name = "lblinteres"
-        Me.lblinteres.Size = New System.Drawing.Size(39, 13)
-        Me.lblinteres.TabIndex = 3
-        Me.lblinteres.Text = "Interes"
-        '
-        'txttiempo
-        '
-        Me.txttiempo.Location = New System.Drawing.Point(354, 29)
-        Me.txttiempo.Name = "txttiempo"
-        Me.txttiempo.Size = New System.Drawing.Size(62, 20)
-        Me.txttiempo.TabIndex = 6
-        '
-        'lbltiempo
-        '
-        Me.lbltiempo.AutoSize = True
-        Me.lbltiempo.Location = New System.Drawing.Point(309, 32)
-        Me.lbltiempo.Name = "lbltiempo"
-        Me.lbltiempo.Size = New System.Drawing.Size(42, 13)
-        Me.lbltiempo.TabIndex = 5
-        Me.lbltiempo.Text = "Tiempo"
-        '
-        'lblInteresSimple
-        '
-        Me.lblInteresSimple.AutoSize = True
-        Me.lblInteresSimple.Location = New System.Drawing.Point(60, 72)
-        Me.lblInteresSimple.Name = "lblInteresSimple"
-        Me.lblInteresSimple.Size = New System.Drawing.Size(85, 13)
-        Me.lblInteresSimple.TabIndex = 7
-        Me.lblInteresSimple.Text = "Interes Simple: ?"
-        '
-        'lblInteresCompuesto
-        '
-        Me.lblInteresCompuesto.AutoSize = True
-        Me.lblInteresCompuesto.Location = New System.Drawing.Point(210, 72)
-        Me.lblInteresCompuesto.Name = "lblInteresCompuesto"
-        Me.lblInteresCompuesto.Size = New System.Drawing.Size(107, 13)
-        Me.lblInteresCompuesto.TabIndex = 8
-        Me.lblInteresCompuesto.Text = "Interes Compuesto: ?"
+        Me.lblRespuestaRomano.AutoSize = True
+        Me.lblRespuestaRomano.Location = New System.Drawing.Point(192, 29)
+        Me.lblRespuestaRomano.Name = "lblRespuestaRomano"
+        Me.lblRespuestaRomano.Size = New System.Drawing.Size(39, 13)
+        Me.lblRespuestaRomano.TabIndex = 3
+        Me.lblRespuestaRomano.Text = "Interes"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(428, 183)
-        Me.Controls.Add(Me.lblInteresCompuesto)
-        Me.Controls.Add(Me.lblInteresSimple)
-        Me.Controls.Add(Me.txttiempo)
-        Me.Controls.Add(Me.lbltiempo)
-        Me.Controls.Add(Me.txtinteres)
-        Me.Controls.Add(Me.lblinteres)
-        Me.Controls.Add(Me.txtcapital)
-        Me.Controls.Add(Me.lblCapital)
+        Me.ClientSize = New System.Drawing.Size(305, 182)
+        Me.Controls.Add(Me.lblRespuestaRomano)
+        Me.Controls.Add(Me.txtnumero)
+        Me.Controls.Add(Me.lblnumero)
         Me.Controls.Add(Me.btnCalcular)
         Me.Name = "Form1"
         Me.Text = "Ejercicios  "
@@ -130,12 +79,7 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents btnCalcular As Button
-    Friend WithEvents lblCapital As Label
-    Friend WithEvents txtcapital As TextBox
-    Friend WithEvents txtinteres As TextBox
-    Friend WithEvents lblinteres As Label
-    Friend WithEvents txttiempo As TextBox
-    Friend WithEvents lbltiempo As Label
-    Friend WithEvents lblInteresSimple As Label
-    Friend WithEvents lblInteresCompuesto As Label
+    Friend WithEvents lblnumero As Label
+    Friend WithEvents txtnumero As TextBox
+    Friend WithEvents lblRespuestaRomano As Label
 End Class
