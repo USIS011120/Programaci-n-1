@@ -31,7 +31,7 @@ Partial Class Form1
         'lbldepto
         '
         Me.lbldepto.AutoSize = True
-        Me.lbldepto.Location = New System.Drawing.Point(77, 47)
+        Me.lbldepto.Location = New System.Drawing.Point(43, 87)
         Me.lbldepto.Name = "lbldepto"
         Me.lbldepto.Size = New System.Drawing.Size(39, 13)
         Me.lbldepto.TabIndex = 0
@@ -40,7 +40,7 @@ Partial Class Form1
         'cboDepto
         '
         Me.cboDepto.FormattingEnabled = True
-        Me.cboDepto.Location = New System.Drawing.Point(122, 44)
+        Me.cboDepto.Location = New System.Drawing.Point(88, 84)
         Me.cboDepto.Name = "cboDepto"
         Me.cboDepto.Size = New System.Drawing.Size(121, 21)
         Me.cboDepto.TabIndex = 1
@@ -48,7 +48,7 @@ Partial Class Form1
         'cboMun
         '
         Me.cboMun.FormattingEnabled = True
-        Me.cboMun.Location = New System.Drawing.Point(305, 44)
+        Me.cboMun.Location = New System.Drawing.Point(271, 84)
         Me.cboMun.Name = "cboMun"
         Me.cboMun.Size = New System.Drawing.Size(121, 21)
         Me.cboMun.TabIndex = 3
@@ -56,7 +56,7 @@ Partial Class Form1
         'lblmun
         '
         Me.lblmun.AutoSize = True
-        Me.lblmun.Location = New System.Drawing.Point(268, 47)
+        Me.lblmun.Location = New System.Drawing.Point(234, 87)
         Me.lblmun.Name = "lblmun"
         Me.lblmun.Size = New System.Drawing.Size(31, 13)
         Me.lblmun.TabIndex = 2
@@ -66,7 +66,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(567, 234)
+        Me.ClientSize = New System.Drawing.Size(442, 227)
         Me.Controls.Add(Me.cboMun)
         Me.Controls.Add(Me.lblmun)
         Me.Controls.Add(Me.cboDepto)
