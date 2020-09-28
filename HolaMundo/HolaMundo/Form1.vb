@@ -1,48 +1,25 @@
 ﻿Public Class Form1
-    Private Sub btncalcular_Click(sender As Object, e As EventArgs) Handles btncalcular.Click
-            Private Sub btncalcular_Click(sender As Object, e As EventArgs) Handles btncalcular.Click
-        Dim num1, num2, respuesta As Double
-        num1 = txtnum1.Text
-        num2 = txtnum2.Text
-        If optsuma.Checked Then
-            lblrespuesta.Text = num1 + num2
-        End If
-        If optresta.Checked Then
-            lblrespuesta.Text = num1 - num2
-        End If
-        If optmultiplicacion.Checked Then
-            lblrespuesta.Text = num1 * num2
-        End If
-        If optdivicion.Checked Then
-            lblrespuesta.Text = num1 / num2
-        End If
-        If optporcentaje.Checked Then
-            lblrespuesta.Text = num1 * num2 / 100
-        End If
-        If optesponente.Checked Then
-            lblrespuesta.Text = num1 ^ num2
-        End If
-        If optmodulo.Checked Then
-            lblrespuesta.Text = num1 Mod num2
-        End If
+    Dim objdirecciones = New direcciones()
 
-        Select Case cboOperaciones.SelectedIndex
-            Case 1
-                lblrespuesta.Text = num1 + num2
-            Case 2
-                lblrespuesta.Text = num1 - num2
-            Case 3
-                lblrespuesta.Text = num1 * num2
-            Case 4
-                lblrespuesta.Text = num1 / num2
-            Case 5
-                lblrespuesta.Text = num1 * num2 / 100
-            Case 6
-                lblrespuesta.Text = num1 ^ num2
-            Case 7
-                lblrespuesta.Text = num1 Mod num2
-        End Select
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        cboDepto.Items.AddRange(objdirecciones.depto)
+    End Sub
 
+    Private Sub cboDepto_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboDepto.SelectedIndexChanged
+        cboMun.Items.Clear()
+        cboMun.Text = ""
+        cboMun.Items.AddRange(objdirecciones.mun(cboDepto.SelectedIndex))
     End Sub
-    End Sub
+End Class
+
+Class direcciones
+    Public depto() As String = {"Seleccione un depto.", "Usulutan", "San Miguel", "La Union", "Morazan"}
+    Public mun()() As String = {
+        New String() {"Seleccione un depto."},
+        New String() {"Seleccione un municipio", "Usulutan", "Jiquilisco", "Santa Elena", "Santa Maria"},    '0->Usulutan
+        New String() {"Seleccione un municipio", "San Miguel", "El Transito", "San Rafael Ote", "San Jorge"},'1->San Miguel
+        New String() {"Seleccione un municipio", "La Union", "SRL", "Anamoros", "Bolivar"},                  '2->La Union
+        New String() {"Seleccione un municipio", "Arambala", "Perquin", "Corinto", "Cacaopera"},              '3->Morazan
+        New String() {"Seleccione un municipio", "San Salvador"}
+    }
 End Class
