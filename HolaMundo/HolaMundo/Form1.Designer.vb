@@ -22,197 +22,139 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lblnum1 = New System.Windows.Forms.Label()
-        Me.txtnum1 = New System.Windows.Forms.TextBox()
-        Me.btncalcular = New System.Windows.Forms.Button()
-        Me.lblnum2 = New System.Windows.Forms.Label()
+        Me.lbltipo = New System.Windows.Forms.Label()
+        Me.cbotipo = New System.Windows.Forms.ComboBox()
+        Me.btnConvertir = New System.Windows.Forms.Button()
+        Me.cbode = New System.Windows.Forms.ComboBox()
+        Me.lblde = New System.Windows.Forms.Label()
+        Me.cboa = New System.Windows.Forms.ComboBox()
+        Me.lbla = New System.Windows.Forms.Label()
+        Me.txtcantidad = New System.Windows.Forms.TextBox()
+        Me.lblcantidad = New System.Windows.Forms.Label()
         Me.lblrespuesta = New System.Windows.Forms.Label()
-        Me.txtnum2 = New System.Windows.Forms.TextBox()
-        Me.optsuma = New System.Windows.Forms.RadioButton()
-        Me.optresta = New System.Windows.Forms.RadioButton()
-        Me.optmultiplicacion = New System.Windows.Forms.RadioButton()
-        Me.optdivicion = New System.Windows.Forms.RadioButton()
-        Me.optporcentaje = New System.Windows.Forms.RadioButton()
-        Me.optesponente = New System.Windows.Forms.RadioButton()
-        Me.optmodulo = New System.Windows.Forms.RadioButton()
-        Me.cboOperaciones = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
-        'lblnum1
+        'lbltipo
         '
-        Me.lblnum1.AutoSize = True
-        Me.lblnum1.Location = New System.Drawing.Point(59, 32)
-        Me.lblnum1.Name = "lblnum1"
-        Me.lblnum1.Size = New System.Drawing.Size(41, 13)
-        Me.lblnum1.TabIndex = 0
-        Me.lblnum1.Text = "Num 1:"
+        Me.lbltipo.AutoSize = True
+        Me.lbltipo.Location = New System.Drawing.Point(183, 47)
+        Me.lbltipo.Name = "lbltipo"
+        Me.lbltipo.Size = New System.Drawing.Size(28, 13)
+        Me.lbltipo.TabIndex = 0
+        Me.lbltipo.Text = "Tipo"
         '
-        'txtnum1
+        'cbotipo
         '
-        Me.txtnum1.Location = New System.Drawing.Point(104, 29)
-        Me.txtnum1.Name = "txtnum1"
-        Me.txtnum1.Size = New System.Drawing.Size(100, 20)
-        Me.txtnum1.TabIndex = 1
+        Me.cbotipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbotipo.FormattingEnabled = True
+        Me.cbotipo.Items.AddRange(New Object() {"Monedas", "Longitud", "Masa", "Almacenamiento", "Tiempo"})
+        Me.cbotipo.Location = New System.Drawing.Point(227, 44)
+        Me.cbotipo.Name = "cbotipo"
+        Me.cbotipo.Size = New System.Drawing.Size(121, 21)
+        Me.cbotipo.TabIndex = 1
         '
-        'btncalcular
+        'btnConvertir
         '
-        Me.btncalcular.Location = New System.Drawing.Point(129, 176)
-        Me.btncalcular.Name = "btncalcular"
-        Me.btncalcular.Size = New System.Drawing.Size(75, 23)
-        Me.btncalcular.TabIndex = 2
-        Me.btncalcular.Text = "Calcular"
-        Me.btncalcular.UseVisualStyleBackColor = True
+        Me.btnConvertir.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConvertir.Location = New System.Drawing.Point(117, 161)
+        Me.btnConvertir.Name = "btnConvertir"
+        Me.btnConvertir.Size = New System.Drawing.Size(181, 62)
+        Me.btnConvertir.TabIndex = 2
+        Me.btnConvertir.Text = "Convertir "
+        Me.btnConvertir.UseVisualStyleBackColor = True
         '
-        'lblnum2
+        'cbode
         '
-        Me.lblnum2.AutoSize = True
-        Me.lblnum2.Location = New System.Drawing.Point(276, 39)
-        Me.lblnum2.Name = "lblnum2"
-        Me.lblnum2.Size = New System.Drawing.Size(44, 13)
-        Me.lblnum2.TabIndex = 3
-        Me.lblnum2.Text = "Num 2 :"
+        Me.cbode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbode.FormattingEnabled = True
+        Me.cbode.Location = New System.Drawing.Point(70, 111)
+        Me.cbode.Name = "cbode"
+        Me.cbode.Size = New System.Drawing.Size(121, 21)
+        Me.cbode.TabIndex = 4
+        '
+        'lblde
+        '
+        Me.lblde.AutoSize = True
+        Me.lblde.Location = New System.Drawing.Point(39, 114)
+        Me.lblde.Name = "lblde"
+        Me.lblde.Size = New System.Drawing.Size(25, 13)
+        Me.lblde.TabIndex = 3
+        Me.lblde.Text = "DE:"
+        '
+        'cboa
+        '
+        Me.cboa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboa.FormattingEnabled = True
+        Me.cboa.Location = New System.Drawing.Point(217, 111)
+        Me.cboa.Name = "cboa"
+        Me.cboa.Size = New System.Drawing.Size(121, 21)
+        Me.cboa.TabIndex = 6
+        '
+        'lbla
+        '
+        Me.lbla.AutoSize = True
+        Me.lbla.Location = New System.Drawing.Point(197, 114)
+        Me.lbla.Name = "lbla"
+        Me.lbla.Size = New System.Drawing.Size(14, 13)
+        Me.lbla.TabIndex = 5
+        Me.lbla.Text = "A"
+        '
+        'txtcantidad
+        '
+        Me.txtcantidad.Location = New System.Drawing.Point(399, 111)
+        Me.txtcantidad.Name = "txtcantidad"
+        Me.txtcantidad.Size = New System.Drawing.Size(100, 20)
+        Me.txtcantidad.TabIndex = 7
+        '
+        'lblcantidad
+        '
+        Me.lblcantidad.AutoSize = True
+        Me.lblcantidad.Location = New System.Drawing.Point(344, 114)
+        Me.lblcantidad.Name = "lblcantidad"
+        Me.lblcantidad.Size = New System.Drawing.Size(49, 13)
+        Me.lblcantidad.TabIndex = 8
+        Me.lblcantidad.Text = "Cantidad"
         '
         'lblrespuesta
         '
         Me.lblrespuesta.AutoSize = True
-        Me.lblrespuesta.Location = New System.Drawing.Point(423, 39)
+        Me.lblrespuesta.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblrespuesta.Location = New System.Drawing.Point(343, 184)
         Me.lblrespuesta.Name = "lblrespuesta"
-        Me.lblrespuesta.Size = New System.Drawing.Size(70, 13)
-        Me.lblrespuesta.TabIndex = 4
-        Me.lblrespuesta.Text = "Respuesta: ?"
-        '
-        'txtnum2
-        '
-        Me.txtnum2.Location = New System.Drawing.Point(317, 36)
-        Me.txtnum2.Name = "txtnum2"
-        Me.txtnum2.Size = New System.Drawing.Size(100, 20)
-        Me.txtnum2.TabIndex = 5
-        '
-        'optsuma
-        '
-        Me.optsuma.AutoSize = True
-        Me.optsuma.Location = New System.Drawing.Point(228, 35)
-        Me.optsuma.Name = "optsuma"
-        Me.optsuma.Size = New System.Drawing.Size(31, 17)
-        Me.optsuma.TabIndex = 6
-        Me.optsuma.TabStop = True
-        Me.optsuma.Text = "+"
-        Me.optsuma.UseVisualStyleBackColor = True
-        '
-        'optresta
-        '
-        Me.optresta.AutoSize = True
-        Me.optresta.Location = New System.Drawing.Point(228, 58)
-        Me.optresta.Name = "optresta"
-        Me.optresta.Size = New System.Drawing.Size(28, 17)
-        Me.optresta.TabIndex = 7
-        Me.optresta.TabStop = True
-        Me.optresta.Text = "-"
-        Me.optresta.UseVisualStyleBackColor = True
-        '
-        'optmultiplicacion
-        '
-        Me.optmultiplicacion.AutoSize = True
-        Me.optmultiplicacion.Location = New System.Drawing.Point(228, 81)
-        Me.optmultiplicacion.Name = "optmultiplicacion"
-        Me.optmultiplicacion.Size = New System.Drawing.Size(29, 17)
-        Me.optmultiplicacion.TabIndex = 8
-        Me.optmultiplicacion.TabStop = True
-        Me.optmultiplicacion.Text = "*"
-        Me.optmultiplicacion.UseVisualStyleBackColor = True
-        '
-        'optdivicion
-        '
-        Me.optdivicion.AutoSize = True
-        Me.optdivicion.Location = New System.Drawing.Point(228, 104)
-        Me.optdivicion.Name = "optdivicion"
-        Me.optdivicion.Size = New System.Drawing.Size(30, 17)
-        Me.optdivicion.TabIndex = 9
-        Me.optdivicion.TabStop = True
-        Me.optdivicion.Text = "/"
-        Me.optdivicion.UseVisualStyleBackColor = True
-        '
-        'optporcentaje
-        '
-        Me.optporcentaje.AutoSize = True
-        Me.optporcentaje.Location = New System.Drawing.Point(228, 127)
-        Me.optporcentaje.Name = "optporcentaje"
-        Me.optporcentaje.Size = New System.Drawing.Size(79, 17)
-        Me.optporcentaje.TabIndex = 10
-        Me.optporcentaje.TabStop = True
-        Me.optporcentaje.Text = "Porcentaje "
-        Me.optporcentaje.UseVisualStyleBackColor = True
-        '
-        'optesponente
-        '
-        Me.optesponente.AutoSize = True
-        Me.optesponente.Location = New System.Drawing.Point(228, 153)
-        Me.optesponente.Name = "optesponente"
-        Me.optesponente.Size = New System.Drawing.Size(31, 17)
-        Me.optesponente.TabIndex = 11
-        Me.optesponente.TabStop = True
-        Me.optesponente.Text = "^"
-        Me.optesponente.UseVisualStyleBackColor = True
-        '
-        'optmodulo
-        '
-        Me.optmodulo.AutoSize = True
-        Me.optmodulo.Location = New System.Drawing.Point(228, 176)
-        Me.optmodulo.Name = "optmodulo"
-        Me.optmodulo.Size = New System.Drawing.Size(33, 17)
-        Me.optmodulo.TabIndex = 12
-        Me.optmodulo.TabStop = True
-        Me.optmodulo.Text = "%"
-        Me.optmodulo.UseVisualStyleBackColor = True
-        '
-        'cboOperaciones
-        '
-        Me.cboOperaciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboOperaciones.FormattingEnabled = True
-        Me.cboOperaciones.Items.AddRange(New Object() {"Seleccione una opción", "Suma ", "Resta", "Multiplicación ", "Divición ", "Porcentaje", "Exponenciación ", "Modulo "})
-        Me.cboOperaciones.Location = New System.Drawing.Point(385, 100)
-        Me.cboOperaciones.Name = "cboOperaciones"
-        Me.cboOperaciones.Size = New System.Drawing.Size(121, 21)
-        Me.cboOperaciones.TabIndex = 13
+        Me.lblrespuesta.Size = New System.Drawing.Size(107, 19)
+        Me.lblrespuesta.TabIndex = 9
+        Me.lblrespuesta.Text = "Respuesta:?"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.cboOperaciones)
-        Me.Controls.Add(Me.optmodulo)
-        Me.Controls.Add(Me.optesponente)
-        Me.Controls.Add(Me.optporcentaje)
-        Me.Controls.Add(Me.optdivicion)
-        Me.Controls.Add(Me.optmultiplicacion)
-        Me.Controls.Add(Me.optresta)
-        Me.Controls.Add(Me.optsuma)
-        Me.Controls.Add(Me.txtnum2)
+        Me.ClientSize = New System.Drawing.Size(554, 282)
         Me.Controls.Add(Me.lblrespuesta)
-        Me.Controls.Add(Me.lblnum2)
-        Me.Controls.Add(Me.btncalcular)
-        Me.Controls.Add(Me.txtnum1)
-        Me.Controls.Add(Me.lblnum1)
+        Me.Controls.Add(Me.lblcantidad)
+        Me.Controls.Add(Me.txtcantidad)
+        Me.Controls.Add(Me.cboa)
+        Me.Controls.Add(Me.lbla)
+        Me.Controls.Add(Me.cbode)
+        Me.Controls.Add(Me.lblde)
+        Me.Controls.Add(Me.btnConvertir)
+        Me.Controls.Add(Me.cbotipo)
+        Me.Controls.Add(Me.lbltipo)
         Me.Name = "Form1"
-        Me.Text = "Calculadora  Basica "
+        Me.Text = "Comobos dinamicos "
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents lblnum1 As Label
-    Friend WithEvents txtnum1 As TextBox
-    Friend WithEvents btncalcular As Button
-    Friend WithEvents lblnum2 As Label
+    Friend WithEvents lbltipo As Label
+    Friend WithEvents cbotipo As ComboBox
+    Friend WithEvents btnConvertir As Button
+    Friend WithEvents cbode As ComboBox
+    Friend WithEvents lblde As Label
+    Friend WithEvents cboa As ComboBox
+    Friend WithEvents lbla As Label
+    Friend WithEvents txtcantidad As TextBox
+    Friend WithEvents lblcantidad As Label
     Friend WithEvents lblrespuesta As Label
-    Friend WithEvents txtnum2 As TextBox
-    Friend WithEvents optsuma As RadioButton
-    Friend WithEvents optresta As RadioButton
-    Friend WithEvents optmultiplicacion As RadioButton
-    Friend WithEvents optdivicion As RadioButton
-    Friend WithEvents optporcentaje As RadioButton
-    Friend WithEvents optesponente As RadioButton
-    Friend WithEvents optmodulo As RadioButton
-    Friend WithEvents cboOperaciones As ComboBox
 End Class
