@@ -28,7 +28,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1055, 523)
+        Me.ClientSize = New System.Drawing.Size(801, 466)
         Me.Name = "Form1"
         Me.Text = "Sistema de Inventario y Facturacion"
         Me.ResumeLayout(False)
